@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Existing menu items -->
+    <item
+        android:id="@+id/menu_analytics"
+        android:title="Analytics" />
+    <item
+        android:id="@+id/menu_history"
+        android:title="History" />
+    <item
+        android:id="@+id/menu_compare"
+        android:title="Compare" />
+    <item
+        android:id="@+id/menu_map"
+        android:title="Map" />
+    <item
+        android:id="@+id/menu_gps_toggle"
+        android:title="GPS On" />
+
+    <!-- Add this new menu item -->
+    <item
+        android:id="@+id/menu_set_username"
+        android:title="Set Username" />
+    <item
+        android:id="@+id/menu_open_web"
+        android:title="Web Sessions" />
+    <!-- New menu item for toggling background color -->
+    <item
+        android:id="@+id/menu_toggle_bg"
+        android:title="Background Color" />
+    <item
+        android:id="@+id/menu_live_sessions"
+        android:title="Live Sessions" />
+    <item
+        android:id="@+id/menu_auto_start"
+        android:title="Auto-start live session"
+        android:checkable="true" />
+</menu>

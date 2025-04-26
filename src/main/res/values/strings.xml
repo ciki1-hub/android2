@@ -1,0 +1,102 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MX StopWatch Web</string>
+
+    <!-- Stopwatch UI -->
+    <string name="total_time">Total Time: %s</string>
+    <string name="current_lap">Current Lap: %s</string>
+    <string name="best_lap">Best Lap: %s</string>
+    <string name="start_button_text">Start</string>
+    <string name="stop_button_text">Stop</string>
+    <string name="lap_button_text">Lap</string>
+    <string name="sector_button_text">Sector</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="mark_start_finish_button_text">Mark Start/Finish</string>
+    <string name="mark_sector_button_text">Mark Sector</string>
+    <string name="map_button_text">Open Map</string>
+    <string name="gps_on_button_text">GPS On</string>
+    <string name="gps_off_button_text">GPS Off</string>
+    <string name="start_finish_marked">Start/Finish Marked</string>
+    <string name="sector_marked">Sector Marked</string>
+    <string name="lap_time_format">Lap %d: %s</string>
+    <string name="sector_time_format">Sector %d: %s</string>
+
+    <!-- Detection Messages -->
+    <string name="detection_start">Start detected</string>
+    <string name="detection_lap">Lap detected</string>
+    <string name="detection_sector">Sector detected</string>
+    <string name="detection_none">No detection</string>
+
+    <!-- Buttons -->
+    <string name="enable_camera_button">Enable Camera</string>
+    <string name="disable_camera_button">Disable Camera</string>
+
+    <!-- Newly Added Strings -->
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="session_name_format">Session %d</string>
+    <string name="sector_time_placeholder">   %1$s</string>
+    <string name="current_lap_sectors">Current Lap Sectors</string>
+
+    <!-- History Screen Strings -->
+    <string name="history_title">History</string>
+    <string name="no_sessions_available">No sessions available</string>
+    <string name="session_name">Session: %s</string>
+    <string name="session_date">Date: %s</string>
+    <string name="session_total_time">Total Time: %s</string>
+    <string name="session_location">Location: %s</string>
+    <string name="session_fastest_lap">Fastest Lap: %s</string>
+    <string name="session_slowest_lap">Slowest Lap: %s</string>
+    <string name="session_average_lap">Average Lap: %s</string>
+    <string name="session_consistency">Consistency: %s</string>
+    <string name="delete_session">Delete</string>
+    <string name="edit_session_name">Edit Session Name</string>
+
+    <!-- Add these new strings for notifications and live sessions -->
+    <string name="notification_title">MX StopWatch</string>
+    <string name="notification_message">You exited the app. Come back to track your sessions!</string>
+    <string name="default_notification_channel_id">stopwatch_channel</string>
+    <string name="notification_channel_name">App Notifications</string>
+    <string name="notification_channel_description">Notifications from MX StopWatch</string>
+
+    <!-- Live Session Strings -->
+    <string name="live_session_created">Live session created!</string>
+    <string name="live_session_joined">Joined live session</string>
+    <string name="live_session_left">Left live session</string>
+    <string name="live_session_error">Error with live session</string>
+    <string name="live_session_host">Host: %s</string>
+    <string name="live_session_participants">Participants: %d</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="auto_start_enabled">Auto-start enabled</string>
+    <string name="auto_start_disabled">Auto-start disabled</string>
+    <!-- Reset Dialog -->
+    <string name="reset_title">Reset Stopwatch</string>
+    <string name="reset_message">Save session before resetting?</string>
+    <string name="save_reset">Save &amp; Reset</string>
+    <string name="just_reset">Reset Without Saving</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_title">Exit App?</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+
+    <!-- Session Feedback -->
+    <string name="session_saved">Session saved</string>
+    <string name="reset_without_save">Reset without saving</string>
+
+    <!-- Live Session Dialogs -->
+    <string name="live_session_dialog_title">Live Sessions</string>
+    <string name="join_session">Join Session</string>
+    <string name="browse_public_sessions">Browse Public Sessions</string>
+    <string name="leave_session">Leave Session</string>
+    <string name="no_active_sessions">No active sessions</string>
+    <string name="load_failed">Load failed: %s</string>
+    <string name="confirm_join_session">Join %s by %s?</string>
+
+    <!-- General UI -->
+    <string name="default_time">00:00:00</string>
+    <string name="loading_sessions">Loading sessions…</string>
+    <string name="enter_session_id">Enter session ID</string>
+    <string name="set_username">Set Username</string>
+    <string name="username_saved">Username saved: %s</string>
+</resources>

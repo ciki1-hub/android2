@@ -1,0 +1,176 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="0dp"> <!-- Removed top padding -->
+
+    <!-- App Name Header -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:text="MX StopWatch"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/totalTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/time_display_background"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="00:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:outlineProvider="background" />
+
+    <!-- Current Lap Display -->
+    <TextView
+        android:id="@+id/currentLapTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTimeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Current Lap: 00:00:00"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Best Lap Display -->
+    <TextView
+        android:id="@+id/bestLapTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentLapTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Best Lap: 00:00:00"
+        android:textSize="18sp"
+        android:textColor="@color/red" />
+
+    <!-- First Row of Buttons (Start/Pause and Reset) -->
+    <LinearLayout
+        android:id="@+id/firstButtonRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bestLapTextView"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Start"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Reset"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Second Row of Buttons (Lap and Sector) -->
+    <LinearLayout
+        android:id="@+id/secondButtonRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstButtonRow"
+        android:layout_marginTop="13dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/lapButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Lap"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sectorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Sector"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Scrollable List for Laps and Sectors -->
+
+    <!-- Floating Action Button (FAB) for Navigation -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_below="@id/secondButtonRow"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/timesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_menu" />
+
+</RelativeLayout>
